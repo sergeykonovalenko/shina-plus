@@ -1,0 +1,38 @@
+.download-price-list {
+
+}
+
+.download-price-list__button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.download-price-list__btn-info {
+    position: absolute;
+    top: 64px;
+    right: -48px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    color: #161617;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -28px;
+        left: -38px;
+        width: 30px;
+        height: 30px;
+        background: url("img/bg/click.svg") no-repeat 0 0;
+        background-size: contain;
+    }
+}
+
+.download-price-list__status {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #161617;
+}

@@ -1,0 +1,43 @@
+.main-header {
+    line-height: 1.25;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header__wr {
+    display: flex;
+    height: 46px;
+}
+
+.main-header__logo-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.main-header__logo-img {
+
+}
+
+.main-header__nav {
+
+}
+
+.main-header__phone {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-main;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        color: $color-secondary;
+    }
+}

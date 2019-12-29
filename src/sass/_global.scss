@@ -11,6 +11,10 @@ html ::before {
 body {
     margin: 0;
     padding: 0;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.5;
+    font-family: "Gilroy", Tahoma, sans-serif;
     color: $color-main;
     word-wrap: break-word;
     background-color: #fff;
@@ -56,9 +60,49 @@ textarea {
     resize: none;
 }
 
+h1, h2, h3, h4, h5, h6,
+.heading-2 {
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+}
+
+h2,
+.heading-2 {
+    font-size: 70px;
+}
+
+.heading-2 span {
+    color: $color-secondary;
+}
+
 .container {
     position: relative;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
 }

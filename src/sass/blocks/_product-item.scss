@@ -1,0 +1,80 @@
+.product-item {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 350px;
+    min-height: 505px;
+    padding: 75px 35px 35px;
+    background-color: #222224;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 0 15px 30.1px 4.9px rgba(0, 0, 0, .07);
+}
+
+.no-js .product-item,
+.no-webp .product-item {
+    background-image: url("img/bg/product-item.jpg");
+}
+
+.webp .product-item {
+    background-image: url("img/bg/product-item.webp");
+}
+
+.product-item__list {
+    @include reset-list;
+}
+
+.product-item__item {
+    position: relative;
+    margin-bottom: 35px;
+    padding-left: 42px;
+    font-weight: 500;
+    font-size: 22px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 21px;
+        height: 21px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &--model {
+        font-weight: 600;
+        font-size: 30px;
+        color: $color-secondary;
+
+        &::after {
+            top: 12px;
+            background-image: url("img/bg/tyre.svg");
+        }
+    }
+
+    &--type {
+
+        &::after {
+            background-image: url("img/bg/sedan-car-front.svg");
+        }
+    }
+
+    &--season {
+
+        &::after {
+            background-image: url("img/bg/snowflake.svg");
+        }
+    }
+}
+
+.product-item__button {
+    margin-top: auto;
+}

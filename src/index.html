@@ -7,10 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <!-- SEO -->
-    <title>ШинаПлюс</title>
+    <title>ШинаПлюс — интернет-магазин по продаже шин и дисков в Одессе и Украине</title>
     <meta name="description" content="Продажа колесных дисков и автомобильных шин Одесса, Украина. В нашем интернет магазине большой выбор автошин и автодисков на Ваше авто.">
     <meta name="keywords" content="интернет магазин шин и дисков, шины диски, продажа дисков, продажа шин, украина, одесса">
     <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
     <!-- OG -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Продажа новых шин Nokian оптом">
@@ -18,18 +25,156 @@
     <meta property="og:image" content="https://shinaplus-opt.com.ua/img/og/poster-1200x630.png">
     <meta property="og:url" content="https://shinaplus-opt.com.ua">
     <meta property="og:site_name" content="ШинаПлюс">
+    <!-- Modernizr -->
+    <script src="js/modernizr-custom.js"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <header class="main-header">
+        <div class="main-header__wr">
+            <div class="container">
+                <a class="main-header__logo-link">
+                    <picture>
+                        <source srcset="img/base/logo.webp" type="image/webp">
+                        <img class="main-header__logo-img" src="img/base/logo.png" width="180" height="21" alt="ШинаПлюс">
+                    </picture>
+                </a>
+                <nav class="main-header__nav main-nav">
+                    <ul class="main-nav__list">
+                        <li><a class="scrollto" href="#">Ассортимет</a></li>
+                        <li><a class="scrollto" href="#">Оплата</a></li>
+                        <li><a class="scrollto" href="#">Доставка</a></li>
+                        <li><a class="scrollto" href="#">Отзывы</a></li>
+                        <li><a class="scrollto" href="#">Контакты</a></li>
+                    </ul>
+                </nav><!-- / .main-nav -->
+                <a class="main-header__phone" href="tel:+380503901419">+38 (050) 390-14-19</a>
+            </div>
+        </div>
+    </header><!-- / .main-header -->
+
+    <section class="offer-main">
+        <div class="container">
+            <div class="offer-main__left">
+                <picture class="offer-main__model-logo-box">
+                    <source srcset="img/base/model-logo.webp" type="image/webp">
+                    <img class="offer-main__model-logo" src="img/base/model-logo.png" alt="">
+                </picture>
+                <h1 class="offer-main__title">Продажа новых шин <span>Nokian</span> оптом</h1>
+                <p class="offer-main__subtitle"><span>Лучшая цена на рынке</span> от официального дистрибьютера в Украине</p>
+                <div class="offer-main__download-price-list download-download-price-list">
+                    <a class="download-price-list__button button" href="#">
+                        <span class="download-price-list__btn-text">Получить оптовый прайс-лист</span>
+                        <span class="download-price-list__btn-info">PDF<br> 2.51 MB</span>
+                    </a>
+                    <p class="download-price-list__status">Последнее обновление: 21.11.2019</p>
+                </div><!-- / .download-download-price-list -->
+            </div>
+            <div class="offer-main__right">
+                <picture>
+                    <source srcset="img/base/offer-img.webp" type="image/webp">
+                    <img class="offer-main__img" src="img/base/offer-img.png" width="481" height="468" alt="">
+                </picture>
+            </div>
+        </div>
+    </section><!-- / .offer-main -->
+
+    <section class="assortment">
+        <div class="container">
+            <p class="assortment__title heading-2">Ассортимент моделей <span>Nokian</span></p>
+            <p class="assortment__subtitle">Более 5 000 шин на нашем складе</p>
+            <ul class="assortment__list product-list">
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Nordman RS2</li>
+                        <li class="product-item__item product-item__item--type">Тип: Внедорожные и легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Зимние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Nordman 7</li>
+                        <li class="product-item__item product-item__item--type">Тип: Внедорожные и легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Зимние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Nordman CX2</li>
+                        <li class="product-item__item product-item__item--type">Тип: Легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Зимние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Hakkapeliitta R2</li>
+                        <li class="product-item__item product-item__item--type">Тип: Внедорожные и легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Зимние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Hakka Green</li>
+                        <li class="product-item__item product-item__item--type">Тип: Легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Летние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Hakka Blui</li>
+                        <li class="product-item__item product-item__item--type">Тип: Легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Летние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Hakkapeliitta 8</li>
+                        <li class="product-item__item product-item__item--type">Тип: Легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Зимние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Weatherproof</li>
+                        <li class="product-item__item product-item__item--type">Тип: Легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Зимние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+                <li class="product-list__item product-item">
+                    <ul class="product-item__list">
+                        <li class="product-item__item product-item__item--model">Hakkapeliitta С3</li>
+                        <li class="product-item__item product-item__item--type">Тип: Легковые</li>
+                        <li class="product-item__item product-item__item--season">Сезон: Зимние</li>
+                    </ul>
+                    <a class="product-item__button button" href="#">Получить прайс</a>
+                </li><!-- / .product-item -->
+            </ul><!-- / .product-list -->
+        </div>
+    </section><!-- / .assortment -->
 
     <!-- jQuery -->
-    <!-- Bootstrap -->
-    <!-- Slick Slider -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/noframework.waypoints.min.js"></script>
+    <!-- Fancy Box -->
+    <script src="js/jquery.fancybox.min.js"></script>
     <!-- Masked Input -->
+    <script src="js/jquery.maskedinput.min.js"></script>
     <!-- jQuery mb.browser -->
+    <script src="js/jquery.mb.browser.js"></script>
     <!-- Basic Init -->
+    <script src="js/basic-init.js"></script>
 </body>
 </html>

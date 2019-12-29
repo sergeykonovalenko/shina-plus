@@ -1,0 +1,28 @@
+.main-nav {
+    display: flex;
+}
+
+.main-nav__list {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav__list li {
+    display: flex;
+}
+
+.main-nav__list a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-main;
+    transition: all .15s ease-in;
+
+    &:hover {
+        color: $color-secondary;
+    }
+}
