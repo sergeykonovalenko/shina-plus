@@ -1,0 +1,41 @@
+.delivery {
+    padding-top: 80px;
+}
+
+.delivery__title {
+    margin-top: 0;
+    margin-bottom: 44px;
+}
+
+.delivery__subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.delivery__list {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.delivery__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 65px 35px;
+}
+
+.delivery__logo {
+
+}
+
+.delivery__button-box {
+    margin: 0;
+    text-align: center;
+}
+

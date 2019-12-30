@@ -15,9 +15,9 @@
     color: #fff;
     background-color: $color-secondary;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 9px 14px 1.28px rgba(0, 186, 57, .2);
+    box-shadow: 0 9px 14px 1.28px $btn-shadow;
     transition: all .15s ease-in;
 
     &:hover,

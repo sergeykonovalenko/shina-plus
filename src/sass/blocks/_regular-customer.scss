@@ -1,0 +1,33 @@
+.regular-customer {
+    width: 670px;
+    padding: 50px 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #0a0b0b;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 0 9px 36.55px 6.45px rgba(0, 0, 0, .18);
+}
+
+.no-js .regular-customer,
+.no-webp .regular-customer {
+    background-image: url("img/bg/regular-customer.jpg");
+}
+
+.webp .regular-customer {
+    background-image: url("img/bg/regular-customer.webp");
+}
+
+.regular-customer__title {
+    margin-top: 0;
+    margin-bottom: 47px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+.regular-customer__button {
+    margin: 0;
+}

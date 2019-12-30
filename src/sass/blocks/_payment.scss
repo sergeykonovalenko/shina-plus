@@ -1,0 +1,25 @@
+.payment {
+    padding-top: 80px;
+}
+
+.payment__title {
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+.payment__box {
+    display: flex;
+}
+
+.payment__methods {
+
+}
+
+.payment__methods {
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
+.payment__regular-customer {
+    flex-shrink: 0;
+}

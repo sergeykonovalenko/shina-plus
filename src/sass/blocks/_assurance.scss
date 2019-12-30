@@ -1,0 +1,92 @@
+.assurance {
+    padding-top: 65px;
+    padding-bottom: 90px;
+    color: #fff;
+    background-color: #121316;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.no-js .assurance,
+.no-webp .assurance {
+    background-image: url("img/bg/assurance.jpg");
+}
+
+.webp .assurance {
+    background-image: url("img/bg/assurance.webp");
+}
+
+.assurance .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.assurance__left {
+    //width: 530px;
+    width: calc(50% - 35px);
+}
+
+.assurance__title {
+    margin: 0;
+    text-align: left;
+}
+
+.assurance__right {
+    //width: 540px;
+    width: calc(50% - 35px);
+    padding-top: 25px;
+}
+
+.assurance__list-box {
+    margin-bottom: 49px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.assurance__list-box ul {
+    @include reset-list;
+}
+
+.assurance__list-box li {
+    margin-bottom: 34px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.assurance__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 145px;
+    padding: 30px 15px 30px 92px;
+    background-color: rgba(0, 0, 0, .84);
+    border: 1px solid $color-secondary;
+    border-radius: 4px;
+    box-shadow: 0 9px 35px 1.28px $assurance-card-shadow;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 44px;
+        width: 28px;
+        height: 28px;
+        background: url("img/bg/medal.svg") no-repeat 0 0;
+        background-size: contain;
+        transform: translate(0, -50%);
+    }
+}
+
+.assurance__card-txt {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.assurance__card-txt span {
+    color: $color-secondary;
+}

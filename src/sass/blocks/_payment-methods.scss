@@ -1,0 +1,39 @@
+.payment-methods {
+    line-height: 1.25;
+}
+
+.payment-methods__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.payment-methods__list {
+    margin: 0 0 26px 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.payment-methods__list li {
+    margin-bottom: 22px;
+    font-weight: 500;
+    font-size: 22px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.payment-methods__file-link {
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-secondary;
+    border-bottom: 1px solid $color-secondary;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        border-bottom-color: transparent;
+    }
+}
