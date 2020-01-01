@@ -1,0 +1,95 @@
+.content {
+
+}
+
+.content h1 {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    font-size: 70px;
+}
+
+.content h2 {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    font-size: 70px;
+}
+
+.content h3 {
+    margin-top: 65px;
+    margin-bottom: 55px;
+    font-size: 55px;
+}
+
+.content h4 {
+    margin-top: 55px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.content p,
+.content ul,
+.content blockquote {
+    margin: 21px 0;
+    padding: 0;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content li {
+    position: relative;
+    margin-bottom: 21px;
+    padding-left: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 20px;
+        width: 7px;
+        height: 7px;
+        background-color: $color-secondary;
+        border-radius: 50%;
+    }
+}
+
+.content blockquote {
+
+}
+
+.content blockquote em {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: .8;
+    font-family: Times, Times New Roman, sans-serif;
+}
+
+.content strong {
+    font-weight: 700;
+    color: $color-secondary;
+}
+
+.content a {
+    color: $color-secondary;
+    border-bottom: 1px solid $color-secondary;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        border-bottom-color: transparent;
+    }
+}
+
+.content *:first-child {
+    margin-top: 0;
+}
+
+.content *:last-child {
+    margin-bottom: 0;
+}

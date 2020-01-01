@@ -1,0 +1,80 @@
+.advantages {
+    padding-top: 80px;
+}
+
+.advantages .container {
+    z-index: 2;
+}
+
+.advantages__title {
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+.advantages__box {
+    display: flex;
+    align-items: center;
+}
+
+.advantages__img-box {
+    flex-shrink: 0;
+    margin-right: 85px;
+}
+
+.advantages__img {
+    width: 425px;
+    height: 680px;
+    border-radius: 7px;
+    box-shadow: 0 4px 38.7px 4.3px rgba(0, 0, 0, .05);
+    object-fit: cover;
+}
+
+.advantages__list {
+    @include reset-list;
+
+    flex-grow: 1;
+}
+
+.advantages__item {
+    position: relative;
+    margin-bottom: 80px;
+    padding-left: 110px;
+    font-weight: 500;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 65px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: translate(0, -50%);
+    }
+
+    &:nth-child(1)::before {
+        background-image: url("img/bg/company.svg");
+    }
+
+    &:nth-child(2)::before {
+        background-image: url("img/bg/big-cup.svg");
+    }
+
+    &:nth-child(3)::before {
+        background-image: url("img/bg/winter-tire.svg");
+    }
+
+    &:nth-child(4)::before {
+        background-image: url("img/bg/flat-tire.svg");
+    }
+
+    &:nth-child(5)::before {
+        background-image: url("img/bg/speedometer.svg");
+    }
+}

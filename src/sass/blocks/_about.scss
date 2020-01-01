@@ -1,0 +1,55 @@
+.about {
+    padding-top: 80px;
+}
+
+.about .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about__title {
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+.about__box {
+    display: flex;
+}
+
+.about__left {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 50px;
+}
+
+.about__img {
+    width: 425px;
+    height: 565px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.about__name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 330px;
+    margin: 0;
+    padding: 14px 15px 14px 23px;
+    line-height: 1.25;
+    color: #fff;
+    background-color: $color-secondary;
+    border-radius: 0 7px 0 7px;
+}
+
+.about__right {
+    flex-grow: 1;
+}
+
+.about__txt {
+    margin-bottom: 45px;
+}
+
+.about__button {
+    min-width: 275px;
+}

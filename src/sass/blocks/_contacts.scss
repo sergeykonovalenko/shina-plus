@@ -1,0 +1,73 @@
+.contacts {
+    //position: absolute;
+    //z-index: 1;
+    width: 350px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .91);
+    border: 1px solid $color-secondary;
+    border-radius: 7px;
+    pointer-events: all;
+}
+
+.contacts__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 0 30px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.contacts__list {
+    @include reset-list;
+
+    padding-right: 30px;
+    padding-left: 45px;
+}
+
+.contacts__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contacts__link {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 32px;
+    font-weight: 500;
+    color: #fff;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+        transition-delay: .21s;
+        transition: all .38s cubic-bezier(.65, .26, .42, .89);
+    }
+
+    &--phone::before {
+        background-image: url("img/bg/phone.svg");
+    }
+
+    &--location::before {
+        background-image: url("img/bg/marker.svg");
+    }
+
+    &:hover::before,
+    &:focus::before {
+        animation: .6s shake-custom;
+    }
+}
