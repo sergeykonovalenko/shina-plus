@@ -71,3 +71,22 @@
 .delivery__button {
     min-width: 375px;
 }
+
+@media screen and (max-width: 768px) {
+    .delivery__item {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .delivery__item {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .delivery__button {
+        min-width: auto;
+    }
+}

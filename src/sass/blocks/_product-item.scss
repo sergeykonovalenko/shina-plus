@@ -28,6 +28,8 @@
 
 .product-item__list {
     @include reset-list;
+
+    margin-bottom: 50px;
 }
 
 .product-item__item {
@@ -82,4 +84,33 @@
 .product-item__button {
     margin-top: auto;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .product-item__link {
+        width: 300px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-item__link {
+        width: 337px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-item__link {
+        width: 100%;
+    }
+}
+
+// additional
+@media screen and (width: 768px) {
+    .product-item__link {
+        width: 337px;
+    }
 }

@@ -1,0 +1,29 @@
+.error-404 {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.error-404__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 1.25em;
+}
+
+.error-404__subtitle {
+    margin: 0;
+}
+
+.error-404__subtitle a {
+    //text-decoration: underline;
+    color: $color-secondary;
+    transition: all .15s ease-in;
+    border-bottom: 1px solid $color-secondary;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        border-bottom-color: transparent;
+    }
+}

@@ -1,32 +1,11 @@
 .main-footer {
-    padding-top: 80px;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: $color-secondary;
 }
 
-.main-footer__title {
-    margin-top: 0;
-    margin-bottom: 70px;
-}
-
-.main-footer__map-box {
-    position: relative;
-}
-
-.main-footer__contacts {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 55px 0;
-    pointer-events: none;
-}
-
-.main-footer__contacts .container {
-    display: flex;
-}
-
-.main-footer__map {
-    height: 560px;
+.main-footer__copyright {
+    margin: 0;
+    text-align: center;
 }

@@ -1,0 +1,46 @@
+.form {
+
+}
+
+.form__list {
+    @include reset-list;
+
+    margin-bottom: 15px;
+}
+
+.form__item {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__field-box {
+    position: relative;
+    margin: 0;
+}
+
+.form__field {
+    padding-left: 60px;
+}
+
+.form__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    color: $color-secondary;
+
+    .form__field.error ~ & {
+        color: $color-warning;
+    }
+}
+
+.form__button {
+
+}

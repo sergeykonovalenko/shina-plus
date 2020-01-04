@@ -78,3 +78,46 @@
         background-image: url("img/bg/speedometer.svg");
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .advantages__img-box {
+        margin-right: 50px;
+    }
+
+    .advantages__img {
+        width: 345px;
+    }
+
+    .advantages__item {
+        padding-left: 95px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .advantages__box {
+        display: block;
+    }
+
+    .advantages__img-box {
+        margin-right: 0;
+        margin-bottom: 100px;
+    }
+
+    .advantages__img {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advantages__img {
+        height: 300px;
+    }
+}
+
+// additional
+@media screen and (width: 768px) {
+    .advantages__img {
+        height: 350px;
+    }
+}

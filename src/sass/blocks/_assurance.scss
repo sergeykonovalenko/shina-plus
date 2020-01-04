@@ -23,7 +23,6 @@
 }
 
 .assurance__left {
-    //width: 530px;
     width: calc(50% - 35px);
 }
 
@@ -33,7 +32,6 @@
 }
 
 .assurance__right {
-    //width: 540px;
     width: calc(50% - 35px);
     padding-top: 25px;
 }
@@ -89,4 +87,26 @@
 
 .assurance__card-txt span {
     color: $color-secondary;
+}
+
+@media screen and (max-width: 1200px) {
+    .assurance__left,
+    .assurance__right {
+        width: calc(50% - 25px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .assurance .container {
+        display: block;
+    }
+
+    .assurance__left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .assurance__right {
+        width: 100%;
+    }
 }

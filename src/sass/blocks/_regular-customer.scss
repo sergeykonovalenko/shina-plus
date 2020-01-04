@@ -1,4 +1,5 @@
 .regular-customer {
+    display: block;
     width: 670px;
     padding: 50px 30px;
     text-align: center;
@@ -30,4 +31,16 @@
 
 .regular-customer__button {
     margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .regular-customer {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .regular-customer {
+        width: 100%;
+    }
 }

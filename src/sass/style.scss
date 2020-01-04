@@ -16,8 +16,12 @@
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+@import "blocks/overflow-hidden";
 @import "blocks/main-header";
 @import "blocks/main-nav";
+@import "blocks/sidenav";
+@import "blocks/drawer-backdrop";
+@import "blocks/show-main-nav";
 @import "blocks/offer-main";
 @import "blocks/download-price-list";
 @import "blocks/assortment";
@@ -30,8 +34,25 @@
 @import "blocks/delivery";
 @import "blocks/about";
 @import "blocks/content";
+@import "blocks/clearfix";
 @import "blocks/reviews";
 @import "blocks/advantages";
-@import "blocks/main-footer";
+@import "blocks/contacts-section";
 @import "blocks/contacts";
 @import "blocks/info-window";
+@import "blocks/main-footer";
+
+/* Modal common
+   ========================================================================== */
+@import "blocks/modal-common";
+@import "blocks/form";
+@import "blocks/error";
+
+/* Modal thanks
+   ========================================================================== */
+@import "blocks/modal-thanks";
+
+/* ==========================================================================
+   ERROR 404
+   ========================================================================== */
+@import "blocks/error-404";

@@ -1,6 +1,4 @@
 .contacts {
-    //position: absolute;
-    //z-index: 1;
     width: 350px;
     padding-top: 60px;
     padding-bottom: 40px;
@@ -69,5 +67,24 @@
     &:hover::before,
     &:focus::before {
         animation: .6s shake-custom;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contacts {
+        width: 100%;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacts__title {
+        padding: 0 15px;
+    }
+
+    .contacts__list {
+        padding-right: 15px;
+        padding-left: 30px;
     }
 }

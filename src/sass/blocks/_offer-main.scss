@@ -2,8 +2,6 @@
     display: flex;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 50px;
-    min-height: calc(100vh - 46px);
 }
 
 .offer-main .container {
@@ -12,6 +10,7 @@
 
 .offer-main__left {
     flex-grow: 1;
+    margin-right: 30px;
 }
 
 .offer-main__model-logo-box {
@@ -24,6 +23,15 @@
     font-weight: 600;
     font-size: 70px;
     text-align: left;
+}
+
+.offer-main__img-mobile-box {
+    display: none;
+}
+
+.offer-main__img-mobile {
+    width: 350px;
+    margin: 0 auto 35px;
 }
 
 .offer-main__title span {
@@ -54,4 +62,75 @@
 
 .offer-main__img {
 
+}
+
+@media screen and (max-width: 1340px) {
+    .offer-main__right {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .offer-main__title {
+        font-size: 60px;
+    }
+
+    .offer-main__right {
+        margin-right: 0;
+    }
+
+    .offer-main__img {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .offer-main__left {
+        margin-right: 0;
+    }
+
+    .offer-main__title {
+        text-align: center;
+    }
+
+    .offer-main__subtitle {
+        text-align: center;
+    }
+
+    .offer-main__img-mobile-box {
+        display: block;
+    }
+
+    .offer-main__download-price-list {
+        margin: 0 auto;
+    }
+
+    .offer-main__right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offer-main__title {
+        font-size: 50px;
+    }
+}
+
+// additional
+@media screen and (width: 768px) {
+    .offer-main__title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .offer-main__download-price-list {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .offer-main__title {
+        font-size: 40px;
+    }
 }

@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 html *,
@@ -9,6 +10,11 @@ html ::before {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-weight: 400;
@@ -44,20 +50,46 @@ select,
 textarea {
     display: block;
     width: 100%;
-    padding: 0;
+    padding: 15px;
     font-family: inherit;
+    font-size: 19px;
     color: $color-main;
     background-color: #fff;
-    border-radius: 0;
+    border: 1px solid $color-secondary;
+    border-radius: 4px;
+    transition: all .15s ease-in;
 
     &:hover,
     &:focus {
         outline: none;
     }
+
+    &:focus {
+        box-shadow: 0 0 10px $fields-shadow;
+    }
 }
 
 textarea {
     resize: none;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    appearance: none;
+}
+
+input.error,
+textarea.error {
+    border-color: $color-warning !important;
+
+    &:focus {
+        box-shadow: 0 0 10px rgba(251, 82, 88, .7);
+    }
+}
+
+::placeholder {
+    color: #838383;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -74,6 +106,27 @@ h2,
 
 .heading-2 span {
     color: $color-secondary;
+}
+
+@media screen and (max-width: 1200px) {
+    h2,
+    .heading-2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h2,
+    .heading-2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h2,
+    .heading-2 {
+        font-size: 40px;
+    }
 }
 
 .container {

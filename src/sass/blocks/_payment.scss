@@ -9,6 +9,7 @@
 
 .payment__box {
     display: flex;
+    align-items: flex-start;
 }
 
 .payment__methods {
@@ -22,4 +23,15 @@
 
 .payment__regular-customer {
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .payment__box {
+        display: block;
+    }
+
+    .payment__methods {
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
 }

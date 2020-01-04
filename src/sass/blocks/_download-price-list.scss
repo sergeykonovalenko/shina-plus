@@ -9,8 +9,8 @@
 
 .download-price-list__btn-info {
     position: absolute;
-    top: 64px;
     right: -48px;
+    bottom: -52px;
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
@@ -35,4 +35,20 @@
     line-height: 1.25;
     text-align: center;
     color: #161617;
+}
+
+@media screen and (max-width: 576px) {
+    .download-price-list__status {
+        text-align: left;
+    }
+    
+    .download-price-list__btn-info {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .download-price-list__status {
+        width: 200px;
+    }
 }

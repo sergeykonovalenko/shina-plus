@@ -1,0 +1,40 @@
+.contacts-section {
+    padding-top: 80px;
+}
+
+.contacts-section__title {
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+.contacts-section__map-box {
+    position: relative;
+}
+
+.contacts-section__contacts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 55px 0;
+    pointer-events: none;
+}
+
+.contacts-section__contacts .container {
+    display: flex;
+}
+
+.contacts-section__map {
+    height: 560px;
+}
+
+@media screen and (max-width: 992px) {
+    .contacts-section__contacts {
+        position: static;
+        background-color: rgba(0, 0, 0, 0.91);
+        pointer-events: auto;
+    }
+}
