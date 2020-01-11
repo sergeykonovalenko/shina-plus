@@ -32,6 +32,16 @@
     border-bottom: 1px solid $color-secondary;
     transition: all .15s ease-in;
 
+    .hankook & {
+        color: $color-secondary--hankook;
+        border-bottom-color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        color: $color-secondary--yokohama;
+        border-bottom-color: $color-secondary--yokohama;
+    }
+
     &:hover,
     &:focus {
         border-bottom-color: transparent;

@@ -3,6 +3,14 @@
     font-size: 14px;
     color: #fff;
     background-color: $color-secondary;
+
+    .hankook & {
+        background-color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        background-color: $color-secondary--yokohama;
+    }
 }
 
 .main-footer__copyright {

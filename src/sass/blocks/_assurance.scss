@@ -65,6 +65,16 @@
     border-radius: 4px;
     box-shadow: 0 9px 35px 1.28px $assurance-card-shadow;
 
+    .hankook & {
+        border-color: $color-secondary--hankook;
+        box-shadow: 0 9px 35px 1.28px $assurance-card-shadow--hankook;
+    }
+
+    .yokohama & {
+        border-color: $color-secondary--yokohama;
+        box-shadow: 0 9px 35px 1.28px $assurance-card-shadow--yokohama;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -75,6 +85,14 @@
         background: url("img/bg/medal.svg") no-repeat 0 0;
         background-size: contain;
         transform: translate(0, -50%);
+
+        .hankook & {
+            background-image: url("img/bg/medal--hankook.svg");
+        }
+
+        .yokohama & {
+            background-image: url("img/bg/medal--yokohama.svg");
+        }
     }
 }
 
@@ -87,6 +105,14 @@
 
 .assurance__card-txt span {
     color: $color-secondary;
+
+    .hankook & {
+        color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        color: $color-secondary--yokohama;
+    }
 }
 
 @media screen and (max-width: 1200px) {

@@ -59,6 +59,14 @@ textarea {
     border-radius: 4px;
     transition: all .15s ease-in;
 
+    .hankook & {
+        border-color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        border-color: $color-secondary--yokohama;
+    }
+
     &:hover,
     &:focus {
         outline: none;
@@ -66,6 +74,14 @@ textarea {
 
     &:focus {
         box-shadow: 0 0 10px $fields-shadow;
+
+        .hankook & {
+            box-shadow: 0 0 10px $fields-shadow--hankook;
+        }
+
+        .yokohama & {
+            box-shadow: 0 0 10px $fields-shadow--yokohama;
+        }
     }
 }
 
@@ -106,6 +122,14 @@ h2,
 
 .heading-2 span {
     color: $color-secondary;
+
+    .hankook & {
+        color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        color: $color-secondary--yokohama;
+    }
 }
 
 @media screen and (max-width: 1200px) {

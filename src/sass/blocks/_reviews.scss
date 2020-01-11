@@ -44,7 +44,7 @@
 
 .reviews__item {
     margin-right: 30px;
-    box-shadow: 0 15px 20.64px 3.36px rgba(0, 0, 0, .04);
+    //box-shadow: 0 15px 20.64px 3.36px rgba(0, 0, 0, .04);
 
     &:nth-child(3n) {
         margin-right: 0;
@@ -61,6 +61,7 @@
     width: 360px;
     height: 495px;
     border-radius: 7px;
+    box-shadow: 0 15px 20.64px 3.36px rgba(0, 0, 0, .04);
     overflow: hidden;
 
     &::after {

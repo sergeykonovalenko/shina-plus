@@ -42,6 +42,14 @@
     background-color: $color-secondary;
     border-radius: 0 7px 0 7px;
 
+    .hankook & {
+        background-color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        background-color: $color-secondary--yokohama;
+    }
+
     .about & {
         margin: 0;
     }

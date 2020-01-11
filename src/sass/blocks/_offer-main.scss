@@ -17,6 +17,15 @@
     margin-bottom: 45px;
 }
 
+.offer-main__model-logo {
+
+    .hankook &,
+    .yokohama & {
+        background-color: #fcfcfc;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .04);
+    }
+}
+
 .offer-main__title {
     margin-top: 0;
     margin-bottom: 39px;
@@ -36,6 +45,14 @@
 
 .offer-main__title span {
     color: $color-secondary;
+
+    .hankook & {
+        color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        color: $color-secondary--yokohama;
+    }
 }
 
 .offer-main__subtitle {
@@ -48,6 +65,14 @@
 .offer-main__subtitle span {
     font-weight: 500;
     color: $color-secondary;
+
+    .hankook & {
+        color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        color: $color-secondary--yokohama;
+    }
 }
 
 .offer-main__download-price-list {
@@ -58,6 +83,10 @@
     flex-shrink: 0;
     margin-right: -70px;
     padding-top: 100px;
+
+    .yokohama & {
+        margin-right: -90px;
+    }
 }
 
 .offer-main__img {
@@ -67,16 +96,16 @@
 @media screen and (max-width: 1340px) {
     .offer-main__right {
         margin-right: 0;
+
+        .yokohama & {
+            margin-right: 0;
+        }
     }
 }
 
 @media screen and (max-width: 1200px) {
     .offer-main__title {
         font-size: 60px;
-    }
-
-    .offer-main__right {
-        margin-right: 0;
     }
 
     .offer-main__img {

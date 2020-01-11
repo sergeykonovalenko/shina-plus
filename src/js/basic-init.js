@@ -63,6 +63,15 @@ $(document).ready(function () {
         return false;
     });
 
+    // add extra text if needed
+    $('.btn-modal').on('click', function () {
+        let extraTxt = $(this).attr("data-extra-txt");
+        if (extraTxt) {
+            let fldType = $( $(this).attr('href') ).find('.fld-type');
+            fldType.val(extraTxt);
+        }
+    });
+
     ////////////////////////////////////////////////////////////////////////////
     // Send callback / Send request / Buy product
 
@@ -91,7 +100,8 @@ $(document).ready(function () {
                 'user[email]': {
                     required: true,
                     email: true
-                }
+                },
+                'user[question]': 'required',
             },
             messages:{
                 'user[name]': '',
@@ -99,7 +109,8 @@ $(document).ready(function () {
                 'user[email]': {
                     required: '',
                     email: ''
-                }
+                },
+                'user[question]': '',
             },
             submitHandler: function (form) {
 

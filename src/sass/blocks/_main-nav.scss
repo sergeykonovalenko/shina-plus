@@ -24,6 +24,14 @@
 
     &:hover {
         color: $color-secondary;
+
+        .hankook & {
+            color: $color-secondary--hankook;
+        }
+
+        .yokohama & {
+            color: $color-secondary--yokohama;
+        }
     }
 }
 

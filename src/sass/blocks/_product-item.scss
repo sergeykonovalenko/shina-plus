@@ -1,6 +1,5 @@
 .product-item {
     display: flex;
-    box-shadow: 0 15px 30.1px 4.9px rgba(0, 0, 0, .07);
 }
 
 .product-item__link {
@@ -15,6 +14,8 @@
     background-position: center center;
     background-size: cover;
     border-radius: 7px;
+    box-shadow: 0 15px 30.1px 4.9px rgba(0, 0, 0, .07);
+    transition: all .15s ease-in;
 }
 
 .no-js .product-item__link,
@@ -60,9 +61,25 @@
         font-size: 30px;
         color: $color-secondary;
 
+        .hankook & {
+            color: $color-secondary--hankook;
+        }
+
+        .yokohama & {
+            color: $color-secondary--yokohama;
+        }
+
         &::after {
             top: 12px;
             background-image: url("img/bg/tyre.svg");
+
+            .hankook & {
+                background-image: url("img/bg/tyre--hankook.svg");
+            }
+
+            .yokohama & {
+                background-image: url("img/bg/tyre--yokohama.svg");
+            }
         }
     }
 
@@ -73,10 +90,17 @@
         }
     }
 
-    &--season {
+    &--season--winter {
 
         &::after {
             background-image: url("img/bg/snowflake.svg");
+        }
+    }
+
+    &--season--summer {
+
+        &::after {
+            background-image: url("img/bg/brightness.svg");
         }
     }
 }

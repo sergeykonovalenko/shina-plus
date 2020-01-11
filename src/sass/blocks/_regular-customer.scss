@@ -10,6 +10,14 @@
     background-size: cover;
     border-radius: 7px;
     box-shadow: 0 9px 36.55px 6.45px rgba(0, 0, 0, .18);
+
+    .hankook & {
+        background-color: #211d1d;
+    }
+
+    .yokohama & {
+        background-color: #242728;
+    }
 }
 
 .no-js .regular-customer,
@@ -17,8 +25,26 @@
     background-image: url("img/bg/regular-customer.jpg");
 }
 
+.no-js.hankook .regular-customer,
+.no-webp.hankook .regular-customer {
+    background-image: url("img/bg/regular-customer--hankook.jpg");
+}
+
+.no-js.yokohama .regular-customer,
+.no-webp.yokohama .regular-customer {
+    background-image: url("img/bg/regular-customer--yokohama.jpg");
+}
+
 .webp .regular-customer {
     background-image: url("img/bg/regular-customer.webp");
+}
+
+.webp.hankook .regular-customer {
+    background-image: url("img/bg/regular-customer--hankook.webp");
+}
+
+.webp.yokohama .regular-customer {
+    background-image: url("img/bg/regular-customer--yokohama.webp");
 }
 
 .regular-customer__title {

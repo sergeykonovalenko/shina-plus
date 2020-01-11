@@ -169,6 +169,14 @@
     &:hover,
     &:focus {
         color: $color-secondary;
+
+        .hankook & {
+            color: $color-secondary--hankook;
+        }
+
+        .yokohama & {
+            color: $color-secondary--yokohama;
+        }
     }
 }
 
@@ -201,6 +209,14 @@
             background: url("img/bg/phone.svg") no-repeat 0 0;
             background-size: contain;
             transition: all .15s ease-in;
+
+            .hankook & {
+                background-image: url("img/bg/phone--hankook.svg");
+            }
+
+            .yokohama & {
+                background-image: url("img/bg/phone--yokohama.svg");
+            }
         }
     }
 

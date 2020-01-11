@@ -23,6 +23,11 @@
 
 .form__field {
     padding-left: 60px;
+
+    &--textarea {
+        height: 150px;
+        padding-left: 15px;
+    }
 }
 
 .form__icon {
@@ -36,6 +41,14 @@
     height: 100%;
     color: $color-secondary;
 
+    .hankook & {
+        color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        color: $color-secondary--yokohama;
+    }
+
     .form__field.error ~ & {
         color: $color-warning;
     }
@@ -43,4 +56,13 @@
 
 .form__button {
 
+}
+
+.form__button:disabled,
+.form__button[disabled] {
+    color: #666666;
+    background: #fefefe;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 100%);
+    box-shadow: none;
+    cursor: default;
 }

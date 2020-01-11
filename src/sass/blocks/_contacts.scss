@@ -7,6 +7,14 @@
     border: 1px solid $color-secondary;
     border-radius: 7px;
     pointer-events: all;
+
+    .hankook & {
+        border-color: $color-secondary--hankook;
+    }
+
+    .yokohama & {
+        border-color: $color-secondary--yokohama;
+    }
 }
 
 .contacts__title {
@@ -58,10 +66,26 @@
 
     &--phone::before {
         background-image: url("img/bg/phone.svg");
+
+        .hankook & {
+            background-image: url("img/bg/phone--hankook.svg");
+        }
+
+        .yokohama & {
+            background-image: url("img/bg/phone--yokohama.svg");
+        }
     }
 
     &--location::before {
         background-image: url("img/bg/marker.svg");
+
+        .hankook & {
+            background-image: url("img/bg/marker--hankook.svg");
+        }
+
+        .yokohama & {
+            background-image: url("img/bg/marker--yokohama.svg");
+        }
     }
 
     &:hover::before,

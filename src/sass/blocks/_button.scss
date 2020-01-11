@@ -24,4 +24,24 @@
     &:focus {
         background-color: $color-secondary--light;
     }
+
+    .hankook & {
+        background-color: $color-secondary--hankook;
+        box-shadow: 0 9px 14px 1.28px $btn-shadow--hankook;
+
+        &:hover,
+        &:focus {
+            background-color: $color-secondary--light--hankook;
+        }
+    }
+
+    .yokohama & {
+        background-color: $color-secondary--yokohama;
+        box-shadow: 0 9px 14px 1.28px $btn-shadow--yokohama;
+
+        &:hover,
+        &:focus {
+            background-color: $color-secondary--light--yokohama;
+        }
+    }
 }
