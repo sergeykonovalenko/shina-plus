@@ -7,6 +7,15 @@ $(document).ready(function () {
     const is_mobile = isMobile();
     if (is_mobile) element.classList.add('is-mobile');
 
+    // WOW
+    new WOW({ callback: afterReveal }).init();
+
+    function afterReveal( el ) {
+        el.addEventListener('animationstart', function( event ) {
+            $('.wow').each(function(){ $(this).css('opacity', 1); });
+        });
+    }
+
     // init modal
     $('.btn-modal').fancybox({
         touch : false,
@@ -17,6 +26,10 @@ $(document).ready(function () {
                     <svg width="15" height="15" viewBox="0 0 320 320" fill="#000" xmlns="http://www.w3.org/2000/svg"><path d="M207.6 160L315.3 52.3c6.2-6.2 6.2-16.3 0-22.6l-25-25c-6.2-6.2-16.3-6.2-22.6 0L160 112.4 52.3 4.7c-6.2-6.2-16.3-6.2-22.6 0l-25 25c-6.2 6.2-6.2 16.3 0 22.6L112.4 160 4.7 267.7c-6.2 6.2-6.2 16.3 0 22.6l25 25c6.2 6.2 16.3 6.2 22.6 0L160 207.6l107.7 107.7c6.2 6.2 16.3 6.2 22.6 0l25-25c6.2-6.2 6.2-16.3 0-22.6L207.6 160z"/></svg>
                 </button>`
         },
+    });
+
+    $('.reviews__link').fancybox({
+        backFocus: false,
     });
 
     // show/hide mobile menu
@@ -43,7 +56,6 @@ $(document).ready(function () {
                     mainHeaderWrapper.classList.remove('main-header__wr--end-sticky');
                     mainHeaderWrapper.style.top = -mainHeaderWrapper.outerHTML + 'px';
                 } else {
-                    waypointOffset = 0;
                     mainHeader.style.height = 'auto';
                     mainHeaderWrapper.classList.remove('main-header__wr--sticky');
                     mainHeaderWrapper.classList.add('main-header__wr--end-sticky');
@@ -57,9 +69,9 @@ $(document).ready(function () {
 
     // smooth page scrolling
     $('.scrollto').click(function () {
-        var elementClick = '#'+$(this).attr("href").split("#")[1]
-        var destination = $(elementClick).offset().top;
-        jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 0}, 800);
+        let elementClick = '#' + $(this).attr('href').split('#')[1];
+        let destination = $(elementClick).offset().top;
+        jQuery('html:not(:animated),body:not(:animated)').animate({scrollTop: destination - 0}, 800);
         return false;
     });
 
@@ -86,41 +98,44 @@ $(document).ready(function () {
             let re = new RegExp(regexp);
             return this.optional(element) || re.test(value);
         },
-        "Пожалуйста, проверьте свои данные"
+        "Пожалуйста, проверьте свои данные",
     );
 
     function valEl(el) {
         let validator = el.validate({
             rules:{
-                'user[name]': 'required',
-                'user[phone]': {
+                'fld-phone': {
                     required: true,
                     regex: '^([\+]+)*[0-9\x20\x28\x29\-]{5,20}$'
                 },
-                'user[email]': {
+                'fld-email': {
                     required: true,
                     email: true
                 },
-                'user[question]': 'required',
+                'fld-question': 'required',
             },
             messages:{
-                'user[name]': '',
-                'user[phone]': '',
-                'user[email]': {
+                'fld-phone': '',
+                'user-email': {
                     required: '',
                     email: ''
                 },
-                'user[question]': '',
+                'fld-question': '',
             },
             submitHandler: function (form) {
 
                 let submitBtn = $(form).find('button');
                 let submitBtnText = submitBtn.html();
 
+                // get url for redirection
+                let redirect_url = $(form).find('#redirect_url').val();
+
                 $.ajax({
-                    url: '/sendrequest/',
+                    url: '/sys-send-request/',
                     data: new FormData(form),
                     type: 'POST',
+                    processData: false,
+                    contentType: false,
                     beforeSend: function() {
                         submitBtn.prop('disabled', true).html('Отправка...');
                     },
@@ -130,6 +145,11 @@ $(document).ready(function () {
                         submitBtn.prop('disabled', false).html(submitBtnText);
 
                         if ( data == '1' ) {
+
+                            if ( redirect_url ) { // if need redirect
+                                window.location.replace( redirect_url );
+                            }
+
                             $.fancybox.open({
                                 src: `<div class="modal-thanks modal-common">
                                           <h4 class="modal-thanks__title">Спасибо, за Ваше обращение. Мы свяжемся с Вами в скором времени</h4>
@@ -177,11 +197,10 @@ $(document).ready(function () {
     $('.js-form').each(function() {
         valEl( $(this) );
     });
-
     ////////////////////////////////////////////////////////////////////////////
 
     // masked input
-    $('input[type="tel"]').mask("+38 (999) 999-99-99");
+    $('input[type="tel"]').mask("+38 (999) 999 99 99");
 
     // is mobile
     function isMobile() {

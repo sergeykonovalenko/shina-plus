@@ -30,6 +30,7 @@ Version: 1.0
 @import "blocks/show-main-nav";
 @import "blocks/offer-main";
 @import "blocks/download-price-list";
+@import "blocks/wow";
 @import "blocks/assortment";
 @import "blocks/product-list";
 @import "blocks/product-item";
@@ -57,6 +58,11 @@ Version: 1.0
 /* Modal thanks
    ========================================================================== */
 @import "blocks/modal-thanks";
+
+/* ==========================================================================
+   THE MAIN TEMPLATE FILE
+   ========================================================================== */
+@import "blocks/site-content";
 
 /* ==========================================================================
    ERROR 404
