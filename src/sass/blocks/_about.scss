@@ -42,6 +42,10 @@
     background-color: $color-secondary;
     border-radius: 0 7px 0 7px;
 
+    .nokian & {
+        background-color: $color-secondary--nokian;
+    }
+
     .hankook & {
         background-color: $color-secondary--hankook;
     }

@@ -123,6 +123,10 @@ h2,
 .heading-2 span {
     color: $color-secondary;
 
+    .nokian & {
+        color: $color-secondary--nokian;
+    }
+
     .hankook & {
         color: $color-secondary--hankook;
     }

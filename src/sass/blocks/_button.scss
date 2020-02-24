@@ -25,6 +25,16 @@
         background-color: $color-secondary--light;
     }
 
+    .nokian & {
+        background-color: $color-secondary--nokian;
+        box-shadow: 0 9px 14px 1.28px $btn-shadow--nokian;
+
+        &:hover,
+        &:focus {
+            background-color: $color-secondary--light--nokian;
+        }
+    }
+
     .hankook & {
         background-color: $color-secondary--hankook;
         box-shadow: 0 9px 14px 1.28px $btn-shadow--hankook;

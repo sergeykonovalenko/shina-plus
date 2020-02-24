@@ -65,6 +65,11 @@
     border-radius: 4px;
     box-shadow: 0 9px 35px 1.28px $assurance-card-shadow;
 
+    .nokian & {
+        border-color: $color-secondary--nokian;
+        box-shadow: 0 9px 35px 1.28px $assurance-card-shadow--nokian;
+    }
+
     .hankook & {
         border-color: $color-secondary--hankook;
         box-shadow: 0 9px 35px 1.28px $assurance-card-shadow--hankook;
@@ -82,9 +87,13 @@
         left: 44px;
         width: 28px;
         height: 28px;
-        background: url("img/bg/medal.svg") no-repeat 0 0;
+        background: url("img/bg/medal--hankook.svg") no-repeat 0 0;
         background-size: contain;
         transform: translate(0, -50%);
+
+        .nokian & {
+            background-image: url("img/bg/medal.svg");
+        }
 
         .hankook & {
             background-image: url("img/bg/medal--hankook.svg");
@@ -105,6 +114,10 @@
 
 .assurance__card-txt span {
     color: $color-secondary;
+
+    .nokian & {
+        color: $color-secondary--nokian;
+    }
 
     .hankook & {
         color: $color-secondary--hankook;

@@ -8,6 +8,10 @@
     border-radius: 7px;
     pointer-events: all;
 
+    .nokian & {
+        border-color: $color-secondary--nokian;
+    }
+
     .hankook & {
         border-color: $color-secondary--hankook;
     }
@@ -42,7 +46,8 @@
     }
 }
 
-.contacts__link {
+.contacts__link,
+.main-footer__phone {
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -65,7 +70,11 @@
     }
 
     &--phone::before {
-        background-image: url("img/bg/phone.svg");
+        background-image: url("img/bg/phone--hankook.svg");
+
+        .nokian & {
+            background-image: url("img/bg/phone.svg");
+        }
 
         .hankook & {
             background-image: url("img/bg/phone--hankook.svg");
@@ -77,7 +86,11 @@
     }
 
     &--location::before {
-        background-image: url("img/bg/marker.svg");
+        background-image: url("img/bg/marker--hankook.svg");
+
+        .nokian & {
+            background-image: url("img/bg/marker.svg");
+        }
 
         .hankook & {
             background-image: url("img/bg/marker--hankook.svg");
@@ -91,6 +104,25 @@
     &:hover::before,
     &:focus::before {
         animation: .6s shake-custom;
+    }
+}
+
+.main-footer__phone {
+
+    &::before {
+        background-image: url("img/bg/phone--hankook.svg");
+
+        .nokian & {
+            background-image: url("img/bg/phone.svg");
+        }
+
+        .hankook & {
+            background-image: url("img/bg/phone--hankook.svg");
+        }
+
+        .yokohama & {
+            background-image: url("img/bg/phone--yokohama.svg");
+        }
     }
 }
 

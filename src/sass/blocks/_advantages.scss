@@ -58,23 +58,23 @@
         transform: translate(0, -50%);
     }
 
-    &:nth-child(1)::before {
+    .nokian &:nth-child(1)::before {
         background-image: url("img/bg/company.svg");
     }
 
-    &:nth-child(2)::before {
+    .nokian &:nth-child(2)::before {
         background-image: url("img/bg/big-cup.svg");
     }
 
-    &:nth-child(3)::before {
+    .nokian &:nth-child(3)::before {
         background-image: url("img/bg/winter-tire.svg");
     }
 
-    &:nth-child(4)::before {
+    .nokian &:nth-child(4)::before {
         background-image: url("img/bg/flat-tire.svg");
     }
 
-    &:nth-child(5)::before {
+    .nokian &:nth-child(5)::before {
         background-image: url("img/bg/speedometer.svg");
     }
 }

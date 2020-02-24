@@ -26,6 +26,10 @@
     font-weight: 500;
     color: $color-secondary;
 
+    .nokian & {
+        color: $color-secondary--nokian;
+    }
+
     .hankook & {
         color: $color-secondary--hankook;
     }

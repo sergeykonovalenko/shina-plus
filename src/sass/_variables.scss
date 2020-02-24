@@ -1,12 +1,20 @@
 // Colors
 $color-main:             #1a1a1a;
-$color-secondary:        #00ba39;
-$color-secondary--light: #2bd55f;
+$color-secondary:        #ff4e00;
+$color-secondary--light: #ff7538;;
 $color-warning:          #fb5258;
 
-$btn-shadow:            rgba(0, 186, 57, .2);
-$fields-shadow:         rgba(0, 186, 57, .7);
-$assurance-card-shadow: rgba(0, 186, 57, .05);
+$btn-shadow:            rgba(255, 78, 0, .2);
+$fields-shadow:         rgba(255, 78, 0, .7);
+$assurance-card-shadow: rgba(255, 78, 0, .05);
+
+// Colors Nokian
+$color-secondary--nokian:        #00ba39;
+$color-secondary--light--nokian: #2bd55f;
+
+$btn-shadow--nokian:            rgba(0, 186, 57, .2);
+$fields-shadow--nokian:         rgba(0, 186, 57, .7);
+$assurance-card-shadow--nokian: rgba(0, 186, 57, .05);
 
 // Colors Hankook
 $color-secondary--hankook:        #ff4e00;

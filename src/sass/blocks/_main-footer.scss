@@ -4,6 +4,10 @@
     color: #fff;
     background-color: $color-secondary;
 
+    .nokian & {
+        background-color: $color-secondary--nokian;
+    }
+
     .hankook & {
         background-color: $color-secondary--hankook;
     }
